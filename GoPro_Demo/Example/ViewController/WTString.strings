@@ -1,0 +1,13 @@
+/* 
+  WTString.strings
+  GoPro_Demo
+
+  Created by qiyun on 16/11/18.
+  Copyright © 2016年 qiyun. All rights reserved.
+*/
+
+
+"wt_melody_configure_defaule"       =   "默认配置";
+"wt_melody_configure_add"           =   "添加配置";
+"wt_melody_stock_add"               =   "马上添加股票";
+"wt_melody_default_numberCount"     =   "200字";

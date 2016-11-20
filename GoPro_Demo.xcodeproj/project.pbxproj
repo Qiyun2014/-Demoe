@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F4F5D2EEADDDFF66DBCDCF /* libPods-GoPro_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FA7A635DB25057456C99B2 /* libPods-GoPro_Demo.a */; };
+		AB4532E91DDB03F300261E09 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4532E31DDB03F200261E09 /* IJKMediaFramework.framework */; };
+		AB4532EA1DDB03F300261E09 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4532E41DDB03F200261E09 /* libavcodec.a */; };
+		AB4532EB1DDB03F300261E09 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4532E51DDB03F200261E09 /* libavformat.a */; };
+		AB4532EC1DDB03F300261E09 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4532E61DDB03F300261E09 /* libavutil.a */; };
+		AB4532ED1DDB03F300261E09 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4532E71DDB03F300261E09 /* libswresample.a */; };
+		AB4532EE1DDB03F300261E09 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4532E81DDB03F300261E09 /* libswscale.a */; };
+		AB4532F51DDB048600261E09 /* IDYRealTimePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4532F41DDB048600261E09 /* IDYRealTimePlayerViewController.m */; };
+		AB4533A71DDB292200261E09 /* love1_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533951DDB292200261E09 /* love1_@2x.png */; };
+		AB4533A81DDB292200261E09 /* love1_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533961DDB292200261E09 /* love1_@3x.png */; };
+		AB4533A91DDB292200261E09 /* love2_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533971DDB292200261E09 /* love2_@2x.png */; };
+		AB4533AA1DDB292200261E09 /* love2_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533981DDB292200261E09 /* love2_@3x.png */; };
+		AB4533AB1DDB292200261E09 /* love3_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533991DDB292200261E09 /* love3_@2x.png */; };
+		AB4533AC1DDB292200261E09 /* love3_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB45339A1DDB292200261E09 /* love3_@3x.png */; };
+		AB4533AD1DDB292200261E09 /* love4_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB45339B1DDB292200261E09 /* love4_@2x.png */; };
+		AB4533AE1DDB292200261E09 /* love4_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB45339C1DDB292200261E09 /* love4_@3x.png */; };
+		AB4533AF1DDB292200261E09 /* love5_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB45339D1DDB292200261E09 /* love5_@2x.png */; };
+		AB4533B01DDB292200261E09 /* love5_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB45339E1DDB292200261E09 /* love5_@3x.png */; };
+		AB4533B11DDB292200261E09 /* love6_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB45339F1DDB292200261E09 /* love6_@2x.png */; };
+		AB4533B21DDB292200261E09 /* love6_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533A01DDB292200261E09 /* love6_@3x.png */; };
+		AB4533B31DDB292200261E09 /* love7_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533A11DDB292200261E09 /* love7_@2x.png */; };
+		AB4533B41DDB292200261E09 /* love7_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533A21DDB292200261E09 /* love7_@3x.png */; };
+		AB4533B51DDB292200261E09 /* love8_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533A31DDB292200261E09 /* love8_@2x.png */; };
+		AB4533B61DDB292200261E09 /* love8_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533A41DDB292200261E09 /* love8_@3x.png */; };
+		AB4533B71DDB292200261E09 /* love9_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533A51DDB292200261E09 /* love9_@2x.png */; };
+		AB4533B81DDB292200261E09 /* love9_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB4533A61DDB292200261E09 /* love9_@3x.png */; };
+		AB4533BA1DDB2C7E00261E09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4533B91DDB2C7E00261E09 /* QuartzCore.framework */; };
+		AB6E0FA31DD469710010D7CC /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */; };
+		AB6E0FA41DD46CF20010D7CC /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */; };
+		AB6E0FA51DD46CF20010D7CC /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB7A44441DDBF86900D8558C /* IDYIJKPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A44431DDBF86900D8558C /* IDYIJKPlayerViewController.m */; };
+		AB7A44471DDBF88900D8558C /* IDYPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A44461DDBF88900D8558C /* IDYPlayerView.m */; };
+		AB7D55141DD95B8B004AFF0D /* data in Resources */ = {isa = PBXBuildFile; fileRef = AB7D55131DD95B8B004AFF0D /* data */; };
+		AB8A0F391DDEC6AE001027EE /* WTMelodyBinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A0F371DDEC6AE001027EE /* WTMelodyBinViewController.m */; };
+		AB8A0F441DDED685001027EE /* WTString.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB8A0F431DDED685001027EE /* WTString.strings */; };
+		AB8A0F4A1DDF0437001027EE /* WTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A0F491DDF0437001027EE /* WTTableView.m */; };
+		AB8A0F4D1DDF0679001027EE /* WTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A0F4C1DDF0679001027EE /* WTTableViewCell.m */; };
+		AB8A0F501DE13316001027EE /* IYNBlueToothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A0F4F1DE13316001027EE /* IYNBlueToothManager.m */; };
+		ABCC12A81DD351E900C5DAD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCC12A71DD351E900C5DAD3 /* main.m */; };
+		ABCC12AB1DD351EA00C5DAD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCC12AA1DD351EA00C5DAD3 /* AppDelegate.m */; };
+		ABCC12AE1DD351EA00C5DAD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCC12AD1DD351EA00C5DAD3 /* ViewController.m */; };
+		ABCC12B11DD351EA00C5DAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCC12AF1DD351EA00C5DAD3 /* Main.storyboard */; };
+		ABCC12B31DD351EA00C5DAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCC12B21DD351EA00C5DAD3 /* Assets.xcassets */; };
+		ABCC12B61DD351EA00C5DAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCC12B41DD351EA00C5DAD3 /* LaunchScreen.storyboard */; };
+		ABCC12C11DD351EB00C5DAD3 /* GoPro_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCC12C01DD351EB00C5DAD3 /* GoPro_DemoTests.m */; };
+		ABCC12CC1DD351EB00C5DAD3 /* GoPro_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCC12CB1DD351EB00C5DAD3 /* GoPro_DemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABCC12BD1DD351EB00C5DAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABCC129B1DD351E900C5DAD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABCC12A21DD351E900C5DAD3;
+			remoteInfo = GoPro_Demo;
+		};
+		ABCC12C81DD351EB00C5DAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABCC129B1DD351E900C5DAD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABCC12A21DD351E900C5DAD3;
+			remoteInfo = GoPro_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB6E0FA61DD46CF20010D7CC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB6E0FA51DD46CF20010D7CC /* CocoaAsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19FA7A635DB25057456C99B2 /* libPods-GoPro_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoPro_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B5599C714D5D39E5E2EB68 /* Pods-GoPro_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoPro_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoPro_Demo/Pods-GoPro_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		AB4532E31DDB03F200261E09 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		AB4532E41DDB03F200261E09 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		AB4532E51DDB03F200261E09 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		AB4532E61DDB03F300261E09 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		AB4532E71DDB03F300261E09 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		AB4532E81DDB03F300261E09 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		AB4532F31DDB048600261E09 /* IDYRealTimePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYRealTimePlayerViewController.h; sourceTree = "<group>"; };
+		AB4532F41DDB048600261E09 /* IDYRealTimePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYRealTimePlayerViewController.m; sourceTree = "<group>"; };
+		AB4533951DDB292200261E09 /* love1_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love1_@2x.png"; sourceTree = "<group>"; };
+		AB4533961DDB292200261E09 /* love1_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love1_@3x.png"; sourceTree = "<group>"; };
+		AB4533971DDB292200261E09 /* love2_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love2_@2x.png"; sourceTree = "<group>"; };
+		AB4533981DDB292200261E09 /* love2_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love2_@3x.png"; sourceTree = "<group>"; };
+		AB4533991DDB292200261E09 /* love3_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love3_@2x.png"; sourceTree = "<group>"; };
+		AB45339A1DDB292200261E09 /* love3_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love3_@3x.png"; sourceTree = "<group>"; };
+		AB45339B1DDB292200261E09 /* love4_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love4_@2x.png"; sourceTree = "<group>"; };
+		AB45339C1DDB292200261E09 /* love4_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love4_@3x.png"; sourceTree = "<group>"; };
+		AB45339D1DDB292200261E09 /* love5_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love5_@2x.png"; sourceTree = "<group>"; };
+		AB45339E1DDB292200261E09 /* love5_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love5_@3x.png"; sourceTree = "<group>"; };
+		AB45339F1DDB292200261E09 /* love6_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love6_@2x.png"; sourceTree = "<group>"; };
+		AB4533A01DDB292200261E09 /* love6_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love6_@3x.png"; sourceTree = "<group>"; };
+		AB4533A11DDB292200261E09 /* love7_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love7_@2x.png"; sourceTree = "<group>"; };
+		AB4533A21DDB292200261E09 /* love7_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love7_@3x.png"; sourceTree = "<group>"; };
+		AB4533A31DDB292200261E09 /* love8_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love8_@2x.png"; sourceTree = "<group>"; };
+		AB4533A41DDB292200261E09 /* love8_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love8_@3x.png"; sourceTree = "<group>"; };
+		AB4533A51DDB292200261E09 /* love9_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love9_@2x.png"; sourceTree = "<group>"; };
+		AB4533A61DDB292200261E09 /* love9_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love9_@3x.png"; sourceTree = "<group>"; };
+		AB4533B91DDB2C7E00261E09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		AB7A44421DDBF86900D8558C /* IDYIJKPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYIJKPlayerViewController.h; sourceTree = "<group>"; };
+		AB7A44431DDBF86900D8558C /* IDYIJKPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYIJKPlayerViewController.m; sourceTree = "<group>"; };
+		AB7A44451DDBF88900D8558C /* IDYPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYPlayerView.h; sourceTree = "<group>"; };
+		AB7A44461DDBF88900D8558C /* IDYPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYPlayerView.m; sourceTree = "<group>"; };
+		AB7D55131DD95B8B004AFF0D /* data */ = {isa = PBXFileReference; lastKnownFileType = file; path = data; sourceTree = "<group>"; };
+		AB8A0F361DDEC6AE001027EE /* WTMelodyBinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMelodyBinViewController.h; sourceTree = "<group>"; };
+		AB8A0F371DDEC6AE001027EE /* WTMelodyBinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMelodyBinViewController.m; sourceTree = "<group>"; };
+		AB8A0F431DDED685001027EE /* WTString.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = WTString.strings; sourceTree = "<group>"; };
+		AB8A0F481DDF0437001027EE /* WTTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTableView.h; sourceTree = "<group>"; };
+		AB8A0F491DDF0437001027EE /* WTTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTableView.m; sourceTree = "<group>"; };
+		AB8A0F4B1DDF0679001027EE /* WTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTableViewCell.h; sourceTree = "<group>"; };
+		AB8A0F4C1DDF0679001027EE /* WTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTableViewCell.m; sourceTree = "<group>"; };
+		AB8A0F4E1DE13316001027EE /* IYNBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYNBlueToothManager.h; sourceTree = "<group>"; };
+		AB8A0F4F1DE13316001027EE /* IYNBlueToothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYNBlueToothManager.m; sourceTree = "<group>"; };
+		ABCC12A31DD351E900C5DAD3 /* GoPro_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoPro_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCC12A71DD351E900C5DAD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABCC12A91DD351E900C5DAD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABCC12AA1DD351EA00C5DAD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABCC12AC1DD351EA00C5DAD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ABCC12AD1DD351EA00C5DAD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ABCC12B01DD351EA00C5DAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABCC12B21DD351EA00C5DAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABCC12B51DD351EA00C5DAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABCC12B71DD351EA00C5DAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABCC12BC1DD351EB00C5DAD3 /* GoPro_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoPro_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCC12C01DD351EB00C5DAD3 /* GoPro_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoPro_DemoTests.m; sourceTree = "<group>"; };
+		ABCC12C21DD351EB00C5DAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABCC12C71DD351EB00C5DAD3 /* GoPro_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoPro_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCC12CB1DD351EB00C5DAD3 /* GoPro_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoPro_DemoUITests.m; sourceTree = "<group>"; };
+		ABCC12CD1DD351EB00C5DAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B171358C4A7D9A92EE8C8E9B /* Pods-GoPro_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoPro_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoPro_Demo/Pods-GoPro_Demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABCC12A01DD351E900C5DAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB4533BA1DDB2C7E00261E09 /* QuartzCore.framework in Frameworks */,
+				AB4532ED1DDB03F300261E09 /* libswresample.a in Frameworks */,
+				AB6E0FA41DD46CF20010D7CC /* CocoaAsyncSocket.framework in Frameworks */,
+				AB6E0FA31DD469710010D7CC /* CocoaAsyncSocket.framework in Frameworks */,
+				AB4532EA1DDB03F300261E09 /* libavcodec.a in Frameworks */,
+				AB4532EB1DDB03F300261E09 /* libavformat.a in Frameworks */,
+				AB4532EC1DDB03F300261E09 /* libavutil.a in Frameworks */,
+				AB4532EE1DDB03F300261E09 /* libswscale.a in Frameworks */,
+				18F4F5D2EEADDDFF66DBCDCF /* libPods-GoPro_Demo.a in Frameworks */,
+				AB4532E91DDB03F300261E09 /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABCC12B91DD351EB00C5DAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABCC12C41DD351EB00C5DAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090925A619315C085F4EA6F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB4533B91DDB2C7E00261E09 /* QuartzCore.framework */,
+				19FA7A635DB25057456C99B2 /* libPods-GoPro_Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB4532E21DDB03F200261E09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB4532E31DDB03F200261E09 /* IJKMediaFramework.framework */,
+				AB4532E41DDB03F200261E09 /* libavcodec.a */,
+				AB4532E51DDB03F200261E09 /* libavformat.a */,
+				AB4532E61DDB03F300261E09 /* libavutil.a */,
+				AB4532E71DDB03F300261E09 /* libswresample.a */,
+				AB4532E81DDB03F300261E09 /* libswscale.a */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB4532EF1DDB042A00261E09 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				AB4532F01DDB042A00261E09 /* Model */,
+				AB4532F11DDB042A00261E09 /* View */,
+				AB4532F21DDB042A00261E09 /* ViewController */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		AB4532F01DDB042A00261E09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB4532F11DDB042A00261E09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB7A44451DDBF88900D8558C /* IDYPlayerView.h */,
+				AB7A44461DDBF88900D8558C /* IDYPlayerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB4532F21DDB042A00261E09 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AB4532F31DDB048600261E09 /* IDYRealTimePlayerViewController.h */,
+				AB4532F41DDB048600261E09 /* IDYRealTimePlayerViewController.m */,
+				AB7A44421DDBF86900D8558C /* IDYIJKPlayerViewController.h */,
+				AB7A44431DDBF86900D8558C /* IDYIJKPlayerViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AB4533941DDB292200261E09 /* picture */ = {
+			isa = PBXGroup;
+			children = (
+				AB4533951DDB292200261E09 /* love1_@2x.png */,
+				AB4533961DDB292200261E09 /* love1_@3x.png */,
+				AB4533971DDB292200261E09 /* love2_@2x.png */,
+				AB4533981DDB292200261E09 /* love2_@3x.png */,
+				AB4533991DDB292200261E09 /* love3_@2x.png */,
+				AB45339A1DDB292200261E09 /* love3_@3x.png */,
+				AB45339B1DDB292200261E09 /* love4_@2x.png */,
+				AB45339C1DDB292200261E09 /* love4_@3x.png */,
+				AB45339D1DDB292200261E09 /* love5_@2x.png */,
+				AB45339E1DDB292200261E09 /* love5_@3x.png */,
+				AB45339F1DDB292200261E09 /* love6_@2x.png */,
+				AB4533A01DDB292200261E09 /* love6_@3x.png */,
+				AB4533A11DDB292200261E09 /* love7_@2x.png */,
+				AB4533A21DDB292200261E09 /* love7_@3x.png */,
+				AB4533A31DDB292200261E09 /* love8_@2x.png */,
+				AB4533A41DDB292200261E09 /* love8_@3x.png */,
+				AB4533A51DDB292200261E09 /* love9_@2x.png */,
+				AB4533A61DDB292200261E09 /* love9_@3x.png */,
+			);
+			path = picture;
+			sourceTree = "<group>";
+		};
+		AB8A0F321DDEC5B3001027EE /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				AB8A0F331DDEC5B3001027EE /* Model */,
+				AB8A0F341DDEC5B3001027EE /* View */,
+				AB8A0F351DDEC5B3001027EE /* ViewController */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		AB8A0F331DDEC5B3001027EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB8A0F4E1DE13316001027EE /* IYNBlueToothManager.h */,
+				AB8A0F4F1DE13316001027EE /* IYNBlueToothManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB8A0F341DDEC5B3001027EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB8A0F481DDF0437001027EE /* WTTableView.h */,
+				AB8A0F491DDF0437001027EE /* WTTableView.m */,
+				AB8A0F4B1DDF0679001027EE /* WTTableViewCell.h */,
+				AB8A0F4C1DDF0679001027EE /* WTTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB8A0F351DDEC5B3001027EE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AB8A0F361DDEC6AE001027EE /* WTMelodyBinViewController.h */,
+				AB8A0F371DDEC6AE001027EE /* WTMelodyBinViewController.m */,
+				AB8A0F431DDED685001027EE /* WTString.strings */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ABCC129A1DD351E900C5DAD3 = {
+			isa = PBXGroup;
+			children = (
+				ABCC12A51DD351E900C5DAD3 /* GoPro_Demo */,
+				ABCC12BF1DD351EB00C5DAD3 /* GoPro_DemoTests */,
+				ABCC12CA1DD351EB00C5DAD3 /* GoPro_DemoUITests */,
+				ABCC12A41DD351E900C5DAD3 /* Products */,
+				CD80E67B20431B963F7B71BC /* Pods */,
+				090925A619315C085F4EA6F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABCC12A41DD351E900C5DAD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABCC12A31DD351E900C5DAD3 /* GoPro_Demo.app */,
+				ABCC12BC1DD351EB00C5DAD3 /* GoPro_DemoTests.xctest */,
+				ABCC12C71DD351EB00C5DAD3 /* GoPro_DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABCC12A51DD351E900C5DAD3 /* GoPro_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AB8A0F321DDEC5B3001027EE /* Example */,
+				AB4532EF1DDB042A00261E09 /* Player */,
+				AB4532E21DDB03F200261E09 /* Frameworks */,
+				AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */,
+				ABCC12A91DD351E900C5DAD3 /* AppDelegate.h */,
+				ABCC12AA1DD351EA00C5DAD3 /* AppDelegate.m */,
+				AB7D55131DD95B8B004AFF0D /* data */,
+				ABCC12AC1DD351EA00C5DAD3 /* ViewController.h */,
+				ABCC12AD1DD351EA00C5DAD3 /* ViewController.m */,
+				ABCC12AF1DD351EA00C5DAD3 /* Main.storyboard */,
+				ABCC12B21DD351EA00C5DAD3 /* Assets.xcassets */,
+				ABCC12B41DD351EA00C5DAD3 /* LaunchScreen.storyboard */,
+				ABCC12B71DD351EA00C5DAD3 /* Info.plist */,
+				ABCC12A61DD351E900C5DAD3 /* Supporting Files */,
+			);
+			path = GoPro_Demo;
+			sourceTree = "<group>";
+		};
+		ABCC12A61DD351E900C5DAD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB4533941DDB292200261E09 /* picture */,
+				ABCC12A71DD351E900C5DAD3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABCC12BF1DD351EB00C5DAD3 /* GoPro_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABCC12C01DD351EB00C5DAD3 /* GoPro_DemoTests.m */,
+				ABCC12C21DD351EB00C5DAD3 /* Info.plist */,
+			);
+			path = GoPro_DemoTests;
+			sourceTree = "<group>";
+		};
+		ABCC12CA1DD351EB00C5DAD3 /* GoPro_DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABCC12CB1DD351EB00C5DAD3 /* GoPro_DemoUITests.m */,
+				ABCC12CD1DD351EB00C5DAD3 /* Info.plist */,
+			);
+			path = GoPro_DemoUITests;
+			sourceTree = "<group>";
+		};
+		CD80E67B20431B963F7B71BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31B5599C714D5D39E5E2EB68 /* Pods-GoPro_Demo.debug.xcconfig */,
+				B171358C4A7D9A92EE8C8E9B /* Pods-GoPro_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABCC12A21DD351E900C5DAD3 /* GoPro_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABCC12D01DD351EB00C5DAD3 /* Build configuration list for PBXNativeTarget "GoPro_Demo" */;
+			buildPhases = (
+				E6B97E2FF1927AB139602E89 /* [CP] Check Pods Manifest.lock */,
+				ABCC129F1DD351E900C5DAD3 /* Sources */,
+				ABCC12A01DD351E900C5DAD3 /* Frameworks */,
+				ABCC12A11DD351E900C5DAD3 /* Resources */,
+				AB6E0FA61DD46CF20010D7CC /* Embed Frameworks */,
+				751E0780281FD4E3446FB472 /* [CP] Embed Pods Frameworks */,
+				86587E88A70DA2860266661D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoPro_Demo;
+			productName = GoPro_Demo;
+			productReference = ABCC12A31DD351E900C5DAD3 /* GoPro_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABCC12BB1DD351EB00C5DAD3 /* GoPro_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABCC12D31DD351EB00C5DAD3 /* Build configuration list for PBXNativeTarget "GoPro_DemoTests" */;
+			buildPhases = (
+				ABCC12B81DD351EB00C5DAD3 /* Sources */,
+				ABCC12B91DD351EB00C5DAD3 /* Frameworks */,
+				ABCC12BA1DD351EB00C5DAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABCC12BE1DD351EB00C5DAD3 /* PBXTargetDependency */,
+			);
+			name = GoPro_DemoTests;
+			productName = GoPro_DemoTests;
+			productReference = ABCC12BC1DD351EB00C5DAD3 /* GoPro_DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABCC12C61DD351EB00C5DAD3 /* GoPro_DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABCC12D61DD351EB00C5DAD3 /* Build configuration list for PBXNativeTarget "GoPro_DemoUITests" */;
+			buildPhases = (
+				ABCC12C31DD351EB00C5DAD3 /* Sources */,
+				ABCC12C41DD351EB00C5DAD3 /* Frameworks */,
+				ABCC12C51DD351EB00C5DAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABCC12C91DD351EB00C5DAD3 /* PBXTargetDependency */,
+			);
+			name = GoPro_DemoUITests;
+			productName = GoPro_DemoUITests;
+			productReference = ABCC12C71DD351EB00C5DAD3 /* GoPro_DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABCC129B1DD351E900C5DAD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = qiyun;
+				TargetAttributes = {
+					ABCC12A21DD351E900C5DAD3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = KW288R5J73;
+						ProvisioningStyle = Manual;
+					};
+					ABCC12BB1DD351EB00C5DAD3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VLZ8G467JP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ABCC12A21DD351E900C5DAD3;
+					};
+					ABCC12C61DD351EB00C5DAD3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VLZ8G467JP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ABCC12A21DD351E900C5DAD3;
+					};
+				};
+			};
+			buildConfigurationList = ABCC129E1DD351E900C5DAD3 /* Build configuration list for PBXProject "GoPro_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABCC129A1DD351E900C5DAD3;
+			productRefGroup = ABCC12A41DD351E900C5DAD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABCC12A21DD351E900C5DAD3 /* GoPro_Demo */,
+				ABCC12BB1DD351EB00C5DAD3 /* GoPro_DemoTests */,
+				ABCC12C61DD351EB00C5DAD3 /* GoPro_DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABCC12A11DD351E900C5DAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB4533AE1DDB292200261E09 /* love4_@3x.png in Resources */,
+				AB4533B41DDB292200261E09 /* love7_@3x.png in Resources */,
+				AB4533B01DDB292200261E09 /* love5_@3x.png in Resources */,
+				ABCC12B61DD351EA00C5DAD3 /* LaunchScreen.storyboard in Resources */,
+				AB4533B11DDB292200261E09 /* love6_@2x.png in Resources */,
+				AB4533B81DDB292200261E09 /* love9_@3x.png in Resources */,
+				AB4533B31DDB292200261E09 /* love7_@2x.png in Resources */,
+				AB4533B71DDB292200261E09 /* love9_@2x.png in Resources */,
+				AB7D55141DD95B8B004AFF0D /* data in Resources */,
+				AB4533AA1DDB292200261E09 /* love2_@3x.png in Resources */,
+				AB8A0F441DDED685001027EE /* WTString.strings in Resources */,
+				AB4533B21DDB292200261E09 /* love6_@3x.png in Resources */,
+				AB4533AF1DDB292200261E09 /* love5_@2x.png in Resources */,
+				AB4533B51DDB292200261E09 /* love8_@2x.png in Resources */,
+				AB4533AD1DDB292200261E09 /* love4_@2x.png in Resources */,
+				AB4533A71DDB292200261E09 /* love1_@2x.png in Resources */,
+				AB4533A81DDB292200261E09 /* love1_@3x.png in Resources */,
+				AB4533AC1DDB292200261E09 /* love3_@3x.png in Resources */,
+				AB4533A91DDB292200261E09 /* love2_@2x.png in Resources */,
+				AB4533B61DDB292200261E09 /* love8_@3x.png in Resources */,
+				ABCC12B31DD351EA00C5DAD3 /* Assets.xcassets in Resources */,
+				ABCC12B11DD351EA00C5DAD3 /* Main.storyboard in Resources */,
+				AB4533AB1DDB292200261E09 /* love3_@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABCC12BA1DD351EB00C5DAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABCC12C51DD351EB00C5DAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		751E0780281FD4E3446FB472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoPro_Demo/Pods-GoPro_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86587E88A70DA2860266661D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoPro_Demo/Pods-GoPro_Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6B97E2FF1927AB139602E89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABCC129F1DD351E900C5DAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7A44441DDBF86900D8558C /* IDYIJKPlayerViewController.m in Sources */,
+				AB8A0F4D1DDF0679001027EE /* WTTableViewCell.m in Sources */,
+				ABCC12AE1DD351EA00C5DAD3 /* ViewController.m in Sources */,
+				AB8A0F501DE13316001027EE /* IYNBlueToothManager.m in Sources */,
+				AB7A44471DDBF88900D8558C /* IDYPlayerView.m in Sources */,
+				ABCC12AB1DD351EA00C5DAD3 /* AppDelegate.m in Sources */,
+				AB8A0F391DDEC6AE001027EE /* WTMelodyBinViewController.m in Sources */,
+				ABCC12A81DD351E900C5DAD3 /* main.m in Sources */,
+				AB8A0F4A1DDF0437001027EE /* WTTableView.m in Sources */,
+				AB4532F51DDB048600261E09 /* IDYRealTimePlayerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABCC12B81DD351EB00C5DAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCC12C11DD351EB00C5DAD3 /* GoPro_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABCC12C31DD351EB00C5DAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCC12CC1DD351EB00C5DAD3 /* GoPro_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABCC12BE1DD351EB00C5DAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABCC12A21DD351E900C5DAD3 /* GoPro_Demo */;
+			targetProxy = ABCC12BD1DD351EB00C5DAD3 /* PBXContainerItemProxy */;
+		};
+		ABCC12C91DD351EB00C5DAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABCC12A21DD351E900C5DAD3 /* GoPro_Demo */;
+			targetProxy = ABCC12C81DD351EB00C5DAD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABCC12AF1DD351EA00C5DAD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABCC12B01DD351EA00C5DAD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABCC12B41DD351EA00C5DAD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABCC12B51DD351EA00C5DAD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABCC12CE1DD351EB00C5DAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABCC12CF1DD351EB00C5DAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABCC12D11DD351EB00C5DAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B5599C714D5D39E5E2EB68 /* Pods-GoPro_Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KW288R5J73;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoPro_Demo",
+					"$(PROJECT_DIR)/GoPro_Demo/Frameworks",
+				);
+				INFOPLIST_FILE = GoPro_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoPro_Demo/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.douyu.live;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4c0b796-270d-4928-8d3f-7df7cdbcb458";
+				PROVISIONING_PROFILE_SPECIFIER = iOSDevelopment;
+			};
+			name = Debug;
+		};
+		ABCC12D21DD351EB00C5DAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B171358C4A7D9A92EE8C8E9B /* Pods-GoPro_Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KW288R5J73;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoPro_Demo",
+					"$(PROJECT_DIR)/GoPro_Demo/Frameworks",
+				);
+				INFOPLIST_FILE = GoPro_Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoPro_Demo/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tv.douyu.live;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4c0b796-270d-4928-8d3f-7df7cdbcb458";
+				PROVISIONING_PROFILE_SPECIFIER = iOSDevelopment;
+			};
+			name = Release;
+		};
+		ABCC12D41DD351EB00C5DAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLZ8G467JP;
+				INFOPLIST_FILE = GoPro_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.douyu.live.GoPro-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoPro_Demo.app/GoPro_Demo";
+			};
+			name = Debug;
+		};
+		ABCC12D51DD351EB00C5DAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLZ8G467JP;
+				INFOPLIST_FILE = GoPro_DemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.douyu.live.GoPro-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoPro_Demo.app/GoPro_Demo";
+			};
+			name = Release;
+		};
+		ABCC12D71DD351EB00C5DAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VLZ8G467JP;
+				INFOPLIST_FILE = GoPro_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.douyu.live.GoPro-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoPro_Demo;
+			};
+			name = Debug;
+		};
+		ABCC12D81DD351EB00C5DAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VLZ8G467JP;
+				INFOPLIST_FILE = GoPro_DemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tv.douyu.live.GoPro-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoPro_Demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABCC129E1DD351E900C5DAD3 /* Build configuration list for PBXProject "GoPro_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCC12CE1DD351EB00C5DAD3 /* Debug */,
+				ABCC12CF1DD351EB00C5DAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABCC12D01DD351EB00C5DAD3 /* Build configuration list for PBXNativeTarget "GoPro_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCC12D11DD351EB00C5DAD3 /* Debug */,
+				ABCC12D21DD351EB00C5DAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABCC12D31DD351EB00C5DAD3 /* Build configuration list for PBXNativeTarget "GoPro_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCC12D41DD351EB00C5DAD3 /* Debug */,
+				ABCC12D51DD351EB00C5DAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABCC12D61DD351EB00C5DAD3 /* Build configuration list for PBXNativeTarget "GoPro_DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCC12D71DD351EB00C5DAD3 /* Debug */,
+				ABCC12D81DD351EB00C5DAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABCC129B1DD351E900C5DAD3 /* Project object */;
+}

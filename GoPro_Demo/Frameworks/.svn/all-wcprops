@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/DYVOD/!svn/ver/57/trunk/iOS2.300/DYZB/Libs/IJKplayer
+END
+libavformat.a
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/DYVOD/!svn/ver/57/trunk/iOS2.300/DYZB/Libs/IJKplayer/libavformat.a
+END
+libswscale.a
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/DYVOD/!svn/ver/57/trunk/iOS2.300/DYZB/Libs/IJKplayer/libswscale.a
+END
+libswresample.a
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/DYVOD/!svn/ver/57/trunk/iOS2.300/DYZB/Libs/IJKplayer/libswresample.a
+END
+libavcodec.a
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/DYVOD/!svn/ver/57/trunk/iOS2.300/DYZB/Libs/IJKplayer/libavcodec.a
+END
+libavutil.a
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/DYVOD/!svn/ver/57/trunk/iOS2.300/DYZB/Libs/IJKplayer/libavutil.a
+END
