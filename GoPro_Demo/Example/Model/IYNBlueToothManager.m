@@ -5,10 +5,15 @@
 //  Created by qiyun on 16/11/20.
 //  Copyright © 2016年 qiyun. All rights reserved.
 //
+//  example https://github.com/timburks/CBSample
+
+
+#define kRestoreIdentifierKey @"8AC3A4F5-B202-4469-ABEF-FA4C8B57879A"
+#define SAMPLE_SERVICE        @"00000000-0000-0000-0000-000000000001"
+#define NOTIFY_CHARACTERISTIC @"00000000-0000-0000-0000-000000000002"
+#define WRITE_CHARACTERISTIC  @"00000000-0000-0000-0000-000000000003"
 
 #import "IYNBlueToothManager.h"
-
-#define kRestoreIdentifierKey @"35168312ea44a7e76d06defb6fa9fe8ca1e20ebc"
 
 @interface IYNBlueToothManager ()<CBPeripheralManagerDelegate,CBCentralManagerDelegate,CBPeripheralDelegate>
 
@@ -183,20 +188,20 @@
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI{
     
     // RSSI 接收信号强度指示器  127表示信号不可用
-    NSLog(@"周边设备名  %@",peripheral.name);
+    NSLog(@"周边设备名  %@   identifier = %@",peripheral.name,peripheral.identifier.UUIDString);
     
     switch (peripheral.state) {
             
         case CBPeripheralStateDisconnected:
-            
+            NSLog(@"断开连接");
             break;
             
         case CBPeripheralStateConnecting:
-            
+            NSLog(@"连接中");
             break;
             
         case CBPeripheralStateConnected:
-            
+            NSLog(@"连接成功");
             break;
             
         default:
@@ -216,10 +221,9 @@
         if(![self.peripherals containsObject:peripheral]){
             [self.peripherals addObject:peripheral];
         }
-        NSLog(@"开始连接外围设备...");
-        [self.centralManager connectPeripheral:peripheral options:nil];
+        NSLog(@"开始连接外围设备...%@",peripheral.name);
+        [self.centralManager connectPeripheral:peripheral options:@{CBConnectPeripheralOptionNotifyOnDisconnectionKey:@YES}];
     }
-
 }
 
 /*!
@@ -236,16 +240,14 @@
     /* 外围设备列表 */
     [peripheral.services enumerateObjectsUsingBlock:^(CBService * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
        
-        // obj.characteristics
+        NSLog(@"所有的外围设备  %@",obj.peripheral.name);
     }];
-    
-    NSLog(@"连接外围设备成功!   名称  %@",peripheral.name);
     
     //设置外围设备的代理
     peripheral.delegate = self;
     
     //外围设备开始寻找服务
-    [peripheral discoverServices:nil];
+    [peripheral discoverServices:@[kRestoreIdentifierKey]];
 }
 
 /*!
@@ -262,6 +264,9 @@
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error{
     
     NSLog(@"连接外围设备失败!");
+    
+    [peripheral setDelegate:nil];
+    peripheral = nil;
 }
 
 /*!
@@ -278,7 +283,12 @@
  */
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error{
     
-
+    /* 断开重连 */
+    //[central connectPeripheral:peripheral options:@{}];
+    
+    NSLog(@"centralManager:didDisconnectPeripheral:%@ error:%@", peripheral, [error localizedDescription]);
+    [peripheral setDelegate:nil];
+    peripheral = nil;
 }
 
 
@@ -555,7 +565,18 @@
  */
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(nullable NSError *)error{
     
+    NSLog(@"peripheral:%@ didDiscoverServices:%@", peripheral, [error localizedDescription]);
     
+    for (CBService *service in peripheral.services) {
+        
+        NSLog(@"Service found with UUID: %@", service.UUID);
+        
+        if ([service.UUID isEqual:[CBUUID UUIDWithString:SAMPLE_SERVICE]]) {
+            
+            NSLog(@"SAMPLE SERVICE FOUND");
+        }
+        [peripheral discoverCharacteristics:nil forService:service];
+    }
 }
 
 /*!
@@ -585,7 +606,72 @@
  */
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(nullable NSError *)error{
     
+    NSLog(@"peripheral:%@ didDiscoverCharacteristicsForService:%@ error:%@",
+          peripheral, service, [error localizedDescription]);
     
+    if (error) {
+        //设备特征
+        NSLog(@"Discovered characteristics for %@ with error: %@",
+              service.UUID, [error localizedDescription]);
+        return;
+    }
+    
+    if([service.UUID isEqual:[CBUUID UUIDWithString:SAMPLE_SERVICE]]) {
+        for (CBCharacteristic *characteristic in service.characteristics) {
+            NSLog(@"discovered characteristic %@", characteristic.UUID);
+            if([characteristic.UUID isEqual:[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC]]) {
+                NSLog(@"Found Notify Characteristic %@", characteristic);
+                [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+            }
+            
+            else if([characteristic.UUID isEqual:[CBUUID UUIDWithString:WRITE_CHARACTERISTIC]]) {
+                NSLog(@"Found Writable Characteristic %@", characteristic);
+                [peripheral writeValue:[@"hello" dataUsingEncoding:NSUTF8StringEncoding]
+                          forCharacteristic:characteristic
+                                       type:CBCharacteristicWriteWithResponse];
+            }
+        }
+    }
+#ifdef HUH
+    else if ([service.UUID isEqual:[CBUUID UUIDWithString:CBUUIDGenericAccessProfileString]]) {
+        for (CBCharacteristic *characteristic in service.characteristics) {
+            NSLog(@"discovered generic characteristic %@", characteristic.UUID);
+            
+            /* Read device name */
+            if([characteristic.UUID isEqual:[CBUUID UUIDWithString:CBUUIDDeviceNameString]]) {
+                [self.peripheral readValueForCharacteristic:characteristic];
+                NSLog(@"Found a Device Name Characteristic - Read device name");
+            }
+        }
+    }
+#endif
+    
+    if([service.UUID isEqual:[CBUUID UUIDWithString:@"A696CB2B-F3A4-4240-B74D-C457C253857B"]]) {
+        for (CBCharacteristic *characteristic in service.characteristics) {
+            NSLog(@"discovered characteristic %@", characteristic.UUID);
+            
+            
+            if([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"AEDA780E-1CCF-4B85-BCA0-3484F295D031"]]) {
+                NSLog(@"Found Writable Characteristic %@", characteristic);
+                
+                unsigned char byte = 0x0F;
+                NSData *data = [NSData dataWithBytes:&byte length:1];
+                NSLog(@"Writing %@", data);
+                [peripheral writeValue:data
+                          forCharacteristic:characteristic
+                                       type:CBCharacteristicWriteWithResponse];
+                
+                [peripheral writeValue:[[NSData alloc] initWithBase64EncodedString:@"O(∩_∩)O哈哈哈~" options:NSDataBase64DecodingIgnoreUnknownCharacters]
+                     forCharacteristic:characteristic
+                                  type:CBCharacteristicWriteWithResponse];
+            }
+        }
+    }
+    
+    else {
+        NSLog(@"unknown service discovery %@", service.UUID);
+    }
+
 }
 
 /*!
@@ -599,7 +685,25 @@
  */
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(nullable NSError *)error{
     
+    NSLog(@"peripheral:%@ didUpdateValueForCharacteristic:%@ error:%@",
+          peripheral, characteristic, error);
     
+    if (error) {
+        NSLog(@"Error updating value for characteristic %@ error: %@",
+              characteristic.UUID, [error localizedDescription]);
+        return;
+    }
+    
+    if([characteristic.UUID isEqual:[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC]]) {
+        
+        NSString *chunk = [[NSString alloc] initWithData:characteristic.value encoding:NSUTF8StringEncoding];
+        NSLog(@"chunk = %@", chunk);
+        
+        if ([chunk isEqualToString:@"ENDVAL"]) {
+            // let's disconnect
+            NSLog(@"disconnecting");
+        }
+    }
 }
 
 /*!
