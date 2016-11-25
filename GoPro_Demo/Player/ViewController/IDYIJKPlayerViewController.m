@@ -22,7 +22,7 @@
     
     if (!_playerView) {
         
-        _playerView = [[IDYPlayerView alloc] initWithFrame:self.view.bounds contentUrl:[NSURL URLWithString:@"rtmp://192.168.91.37:1935/rtmplive/room"]];
+        _playerView = [[IDYPlayerView alloc] initWithFrame:self.view.bounds contentUrl:[NSURL URLWithString:@"udp://10.5.5.9:8554"]];
     }
     return _playerView;
 }

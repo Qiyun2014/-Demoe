@@ -616,10 +616,15 @@
         return;
     }
     
+    /* 找到设备特征信息 */
     if([service.UUID isEqual:[CBUUID UUIDWithString:SAMPLE_SERVICE]]) {
+        
         for (CBCharacteristic *characteristic in service.characteristics) {
-            NSLog(@"discovered characteristic %@", characteristic.UUID);
+            
+            NSLog(@"发现的设备特征 uuid -->  %@", characteristic.UUID);
+            
             if([characteristic.UUID isEqual:[CBUUID UUIDWithString:NOTIFY_CHARACTERISTIC]]) {
+                
                 NSLog(@"Found Notify Characteristic %@", characteristic);
                 [peripheral setNotifyValue:YES forCharacteristic:characteristic];
             }

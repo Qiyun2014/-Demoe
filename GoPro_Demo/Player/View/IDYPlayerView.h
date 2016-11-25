@@ -14,6 +14,6 @@
 - (id)initWithFrame:(CGRect)frame contentUrl:(NSURL *)url;
 
 @property (nonatomic, strong)   IJKFFMoviePlayerController *player;
-@property (nonatomic, copy) NSURL *url;
+@property (nonatomic, copy)     NSURL *url;
 
 @end

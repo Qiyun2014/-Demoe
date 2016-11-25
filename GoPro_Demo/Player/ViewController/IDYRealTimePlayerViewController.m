@@ -11,10 +11,10 @@
 
 @interface IDYRealTimePlayerViewController ()<LFLiveSessionDelegate>
 
-@property (nonatomic, copy) NSString *rtmpUrl;
-@property (nonatomic, strong) LFLiveSession *session;
-@property (nonatomic, weak) UIView *livingPreView;
-@property(nonatomic, strong) CAEmitterLayer *emitterLayer;
+@property (nonatomic, copy)     NSString        *rtmpUrl;
+@property (nonatomic, strong)   LFLiveSession   *session;
+@property (nonatomic, weak)     UIView          *livingPreView;
+@property (nonatomic, strong)   CAEmitterLayer  *emitterLayer;
 
 - (IBAction)cancelAction:(id)sender;
 - (IBAction)beautifulAction:(id)sender;
@@ -29,6 +29,7 @@
 - (UIView *)livingPreView
 {
     if (!_livingPreView) {
+        
         UIView *livingPreView = [[UIView alloc] initWithFrame:self.view.bounds];
         livingPreView.backgroundColor = [UIColor clearColor];
         livingPreView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;

@@ -37,9 +37,9 @@
 		AB6E0FA31DD469710010D7CC /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */; };
 		AB6E0FA41DD46CF20010D7CC /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */; };
 		AB6E0FA51DD46CF20010D7CC /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB732B7C1DE3E6A800C8A065 /* IDYExternalAccessoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB732B7B1DE3E6A800C8A065 /* IDYExternalAccessoryManager.m */; };
 		AB7A44441DDBF86900D8558C /* IDYIJKPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A44431DDBF86900D8558C /* IDYIJKPlayerViewController.m */; };
 		AB7A44471DDBF88900D8558C /* IDYPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7A44461DDBF88900D8558C /* IDYPlayerView.m */; };
-		AB7D55141DD95B8B004AFF0D /* data in Resources */ = {isa = PBXBuildFile; fileRef = AB7D55131DD95B8B004AFF0D /* data */; };
 		AB8A0F391DDEC6AE001027EE /* WTMelodyBinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A0F371DDEC6AE001027EE /* WTMelodyBinViewController.m */; };
 		AB8A0F441DDED685001027EE /* WTString.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB8A0F431DDED685001027EE /* WTString.strings */; };
 		AB8A0F4A1DDF0437001027EE /* WTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A0F491DDF0437001027EE /* WTTableView.m */; };
@@ -117,11 +117,13 @@
 		AB4533A61DDB292200261E09 /* love9_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "love9_@3x.png"; sourceTree = "<group>"; };
 		AB4533B91DDB2C7E00261E09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		AB732B7A1DE3E6A800C8A065 /* IDYExternalAccessoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYExternalAccessoryManager.h; sourceTree = "<group>"; };
+		AB732B7B1DE3E6A800C8A065 /* IDYExternalAccessoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYExternalAccessoryManager.m; sourceTree = "<group>"; };
 		AB7A44421DDBF86900D8558C /* IDYIJKPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYIJKPlayerViewController.h; sourceTree = "<group>"; };
 		AB7A44431DDBF86900D8558C /* IDYIJKPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYIJKPlayerViewController.m; sourceTree = "<group>"; };
 		AB7A44451DDBF88900D8558C /* IDYPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDYPlayerView.h; sourceTree = "<group>"; };
 		AB7A44461DDBF88900D8558C /* IDYPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDYPlayerView.m; sourceTree = "<group>"; };
-		AB7D55131DD95B8B004AFF0D /* data */ = {isa = PBXFileReference; lastKnownFileType = file; path = data; sourceTree = "<group>"; };
+		AB829CAB1DE81AEF0064487C /* aaaaa */ = {isa = PBXFileReference; lastKnownFileType = file; path = aaaaa; sourceTree = "<group>"; };
 		AB8A0F361DDEC6AE001027EE /* WTMelodyBinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMelodyBinViewController.h; sourceTree = "<group>"; };
 		AB8A0F371DDEC6AE001027EE /* WTMelodyBinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMelodyBinViewController.m; sourceTree = "<group>"; };
 		AB8A0F431DDED685001027EE /* WTString.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = WTString.strings; sourceTree = "<group>"; };
@@ -284,6 +286,8 @@
 			children = (
 				AB8A0F4E1DE13316001027EE /* IYNBlueToothManager.h */,
 				AB8A0F4F1DE13316001027EE /* IYNBlueToothManager.m */,
+				AB732B7A1DE3E6A800C8A065 /* IDYExternalAccessoryManager.h */,
+				AB732B7B1DE3E6A800C8A065 /* IDYExternalAccessoryManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,7 +344,7 @@
 				AB6E0FA21DD469710010D7CC /* CocoaAsyncSocket.framework */,
 				ABCC12A91DD351E900C5DAD3 /* AppDelegate.h */,
 				ABCC12AA1DD351EA00C5DAD3 /* AppDelegate.m */,
-				AB7D55131DD95B8B004AFF0D /* data */,
+				AB829CAB1DE81AEF0064487C /* aaaaa */,
 				ABCC12AC1DD351EA00C5DAD3 /* ViewController.h */,
 				ABCC12AD1DD351EA00C5DAD3 /* ViewController.m */,
 				ABCC12AF1DD351EA00C5DAD3 /* Main.storyboard */,
@@ -509,7 +513,6 @@
 				AB4533B81DDB292200261E09 /* love9_@3x.png in Resources */,
 				AB4533B31DDB292200261E09 /* love7_@2x.png in Resources */,
 				AB4533B71DDB292200261E09 /* love9_@2x.png in Resources */,
-				AB7D55141DD95B8B004AFF0D /* data in Resources */,
 				AB4533AA1DDB292200261E09 /* love2_@3x.png in Resources */,
 				AB8A0F441DDED685001027EE /* WTString.strings in Resources */,
 				AB4533B21DDB292200261E09 /* love6_@3x.png in Resources */,
@@ -599,6 +602,7 @@
 				AB7A44441DDBF86900D8558C /* IDYIJKPlayerViewController.m in Sources */,
 				AB8A0F4D1DDF0679001027EE /* WTTableViewCell.m in Sources */,
 				ABCC12AE1DD351EA00C5DAD3 /* ViewController.m in Sources */,
+				AB732B7C1DE3E6A800C8A065 /* IDYExternalAccessoryManager.m in Sources */,
 				AB8A0F501DE13316001027EE /* IYNBlueToothManager.m in Sources */,
 				AB7A44471DDBF88900D8558C /* IDYPlayerView.m in Sources */,
 				ABCC12AB1DD351EA00C5DAD3 /* AppDelegate.m in Sources */,
